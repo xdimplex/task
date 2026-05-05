@@ -1,4 +1,4 @@
-FROM python:3.10
-WORKDIR: /app
-COPY: . .
-CMD: [ "python","hello.py" ] 
+FROM python:3.9-slim
+WORKDIR /app
+COPY task.py /app
+CMD [ "python","task.py" ]
